@@ -40,7 +40,7 @@ public static class Results
         Result<T>.Success(value, infos, warnings);
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static Result Failure() => Result.Failure();
+    public static Result Failure() => default;
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static Result Failure(params Error[]? errors) =>
@@ -51,7 +51,7 @@ public static class Results
         Result.Failure(errors, warnings, infos);
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static Result<T> Failure<T>() => Result<T>.Failure();
+    public static Result<T> Failure<T>() => default;
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static Result<T> Failure<T>(params Error[]? errors) =>

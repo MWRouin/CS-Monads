@@ -1,5 +1,3 @@
-using MWR.Monads.MaybeMonad;
-
 namespace MWR.Monads.Tests.MaybeMonad;
 
 public class TaskMaybeExtensionsTests

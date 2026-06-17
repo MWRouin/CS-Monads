@@ -46,7 +46,7 @@ public readonly struct Maybe<T> : IEquatable<Maybe<T>>
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public T? GetValueOrDefault() => _hasValue ? _value : default;
 
-    public static readonly Maybe<T> None = new();
+    public static Maybe<T> None => default;
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static Maybe<T> Some(T value) => new(value);
