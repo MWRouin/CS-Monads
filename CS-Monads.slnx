@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Monads.Tests/Monads.Tests.csproj" />
+  <Project Path="Monads/Monads.csproj" />
+</Solution>
